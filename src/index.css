@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 30% 99%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 30% 99%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 30 60% 42%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 35 25% 91%;
+    --secondary-foreground: 30 10% 25%;
+
+    --muted: 35 20% 93%;
+    --muted-foreground: 30 8% 50%;
+
+    --accent: 25 70% 50%;
+    --accent-foreground: 40 33% 97%;
+
+    --destructive: 0 65% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 18% 88%;
+    --input: 35 18% 88%;
+    --ring: 30 60% 42%;
+
+    --radius: 0.75rem;
+
+    --calendar-today: 30 60% 42%;
+    --calendar-range: 30 50% 90%;
+    --calendar-range-edge: 30 60% 42%;
+    --calendar-hover: 35 30% 94%;
+    --calendar-holiday: 0 65% 55%;
+    --calendar-note-dot: 25 70% 50%;
+
+    --glass-bg: 40 30% 99% / 0.7;
+    --glass-border: 35 18% 88% / 0.5;
+
+    --shadow-soft: 0 2px 20px -4px hsl(30 10% 15% / 0.08);
+    --shadow-card: 0 4px 30px -8px hsl(30 10% 15% / 0.1);
+    --shadow-elevated: 0 8px 40px -12px hsl(30 10% 15% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 8%;
+    --foreground: 35 20% 90%;
+
+    --card: 30 10% 11%;
+    --card-foreground: 35 20% 90%;
+
+    --popover: 30 10% 11%;
+    --popover-foreground: 35 20% 90%;
+
+    --primary: 30 55% 55%;
+    --primary-foreground: 30 10% 8%;
+
+    --secondary: 30 8% 18%;
+    --secondary-foreground: 35 20% 85%;
+
+    --muted: 30 8% 16%;
+    --muted-foreground: 30 10% 55%;
+
+    --accent: 25 65% 55%;
+    --accent-foreground: 30 10% 8%;
+
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 8% 20%;
+    --input: 30 8% 20%;
+    --ring: 30 55% 55%;
+
+    --calendar-today: 30 55% 55%;
+    --calendar-range: 30 30% 18%;
+    --calendar-range-edge: 30 55% 55%;
+    --calendar-hover: 30 10% 15%;
+    --calendar-holiday: 0 55% 50%;
+    --calendar-note-dot: 25 65% 55%;
+
+    --glass-bg: 30 10% 11% / 0.8;
+    --glass-border: 30 8% 20% / 0.5;
+
+    --shadow-soft: 0 2px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 4px 30px -8px hsl(0 0% 0% / 0.4);
+    --shadow-elevated: 0 8px 40px -12px hsl(0 0% 0% / 0.5);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--glass-border));
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
