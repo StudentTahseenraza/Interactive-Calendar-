@@ -2,7 +2,11 @@
 
 <div align="center">
 
-<img src="https://via.placeholder.com/1200x630?text=Wall+Calendar" alt="Wall Calendar Preview" width="100%" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0b32152b-3c5b-410f-9e44-e8e955426135" />
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/671fb4bf-f355-4caa-be40-a807422e897a" />
+
+" alt="Wall Calendar Preview" width="100%" />
 
 <h3>✨ Plan smarter. Visualize better. Stay organized. ✨</h3>
 
